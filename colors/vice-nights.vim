@@ -1,15 +1,15 @@
-"  /$$    /$$ /$$$$$$  /$$$$$$  /$$$$$$$$
-" | $$   | $$|_  $$_/ /$$__  $$| $$_____/
-" | $$   | $$  | $$  | $$  \__/| $$      
-" |  $$ / $$/  | $$  | $$      | $$$$$   
-"  \  $$ $$/   | $$  | $$      | $$__/   
-"   \  $$$/    | $$  | $$    $$| $$      
-"    \  $/    /$$$$$$|  $$$$$$/| $$$$$$$$
-"     \_/    |______/ \______/ |________/
-                                        
-" URL: https://github.com/bcicen/vim-vice
-" Author: Bradley Cicenas <bradley@vektor.nyc>
-" License: MIT
+"  /$$    /$$ /$$$$$$  /$$$$$$  /$$$$$$$$       /$$   /$$ /$$$$$$  /$$$$$$  /$$   /$$ /$$$$$$$$ /$$$$$$
+" | $$   | $$|_  $$_/ /$$__  $$| $$_____/      | $$$ | $$|_  $$_/ /$$__  $$| $$  | $$|__  $$__//$$__  $$
+" | $$   | $$  | $$  | $$  \__/| $$            | $$$$| $$  | $$  | $$  \__/| $$  | $$   | $$  | $$  \__/
+" |  $$ / $$/  | $$  | $$      | $$$$$         | $$ $$ $$  | $$  | $$ /$$$$| $$$$$$$$   | $$  |  $$$$$$
+"  \  $$ $$/   | $$  | $$      | $$__/         | $$  $$$$  | $$  | $$|_  $$| $$__  $$   | $$   \____  $$
+"   \  $$$/    | $$  | $$    $$| $$            | $$\  $$$  | $$  | $$  \ $$| $$  | $$   | $$   /$$  \ $$
+"    \  $/    /$$$$$$|  $$$$$$/| $$$$$$$$      | $$ \  $$ /$$$$$$|  $$$$$$/| $$  | $$   | $$  |  $$$$$$/
+"     \_/    |______/ \______/ |________/      |__/  \__/|______/ \______/ |__/  |__/   |__/   \______/
+
+" URL: https://github.com/kristoferjoseph/vim-vice-nights
+" Author: Kristofer Joseph <kristoferjoseph@gmail.com>
+" License: Apache 2
 
 set background=dark
 highlight clear
@@ -19,13 +19,13 @@ if exists("syntax_on")
 endif
 
 set t_Co=256
-let g:colors_name = "vice"
+let g:colors_name = "vice-nights"
 
 " Color definitions
-let s:white         = [231, "#ffffff"]
-let s:grey0         = [102, "#878787"] "lightest grey
-let s:grey1         = [238, "#444444"] "mid grey
-let s:grey2         = [236, "#303030"] "darkest grey
+let s:white         = [231, "#EFEFEF"]
+let s:grey0         = [102, "#666666"] "lightest grey
+let s:grey1         = [238, "#303030"] "mid grey
+let s:grey2         = [236, "#222222"] "darkest grey
 let s:pink          = [212, "#ff87d7"]
 let s:light_pink    = [218, "#ffafd7"]
 let s:hot_pink      = [201, "#ff00ff" ]
