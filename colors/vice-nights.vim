@@ -11,7 +11,7 @@
 " Author: Kristofer Joseph <kristoferjoseph@gmail.com>
 " License: Apache 2
 
-set background=dark
+set background=light
 highlight clear
 
 if exists("syntax_on")
@@ -27,13 +27,13 @@ let s:grey0         = [102, "#666666"] "lightest grey
 let s:grey1         = [238, "#303030"] "mid grey
 let s:grey2         = [236, "#222222"] "darkest grey
 let s:pink          = [212, "#ff87d7"]
-let s:light_pink    = [218, "#ffafd7"]
+let s:hot_pink    = [218, "#ffafd7"]
 let s:hot_pink      = [201, "#ff00ff" ]
 let s:red           = [197, "#ff005f" ]
 let s:teal          = [123, "#87ffff"]
-let s:light_blue    = [159, "#afffff"]
+let s:teal    = [159, "#afffff"]
 let s:light_yellow  = [229, "#ffffaf"]
-let s:mint          = [158, "#afffd7"]
+let s:mint          = [158, "#00ffaf"]
 let s:dark_mint     = [49, "#00ffaf"]
 let s:lavender      = [183, "#d7afff"]
 let s:gray_purple   = [146, "#afafd7"]
@@ -61,14 +61,14 @@ call s:Color("CursorLineNr", s:hot_pink, s:none, "NONE")
 call s:Color("ColorColumn", s:none, s:grey2, "NONE")
 call s:Color("LineNr", s:grey0, s:grey2, "NONE")
 call s:Color("VertSplit", s:grey0, s:grey0, "NONE")
-call s:Color("MatchParen", s:grey0, s:light_blue, "NONE")
+call s:Color("MatchParen", s:grey0, s:teal, "NONE")
 call s:Color("StatusLine", s:white, s:grey1, "NONE")
 call s:Color("StatusLineNC", s:white, s:grey0, "NONE")
 call s:Color("Pmenu", s:white, s:grey0, "NONE")
-call s:Color("PmenuSel", s:grey0, s:light_blue, "NONE")
-call s:Color("IncSearch", s:grey0, s:light_blue, "NONE")
-call s:Color("Search", s:grey0, s:light_blue, "NONE")
-call s:Color("Directory", s:light_blue, s:none, "NONE")
+call s:Color("PmenuSel", s:grey0, s:teal, "NONE")
+call s:Color("IncSearch", s:grey0, s:teal, "NONE")
+call s:Color("Search", s:grey0, s:teal, "NONE")
+call s:Color("Directory", s:teal, s:none, "NONE")
 call s:Color("Folded", s:mint, s:grey1, "NONE")
 call s:Color("Define", s:gray_purple, s:none, "NONE")
 
@@ -76,7 +76,7 @@ call s:Color("Define", s:gray_purple, s:none, "NONE")
 call s:Color("DiffAdd", s:white, s:dark_mint, "NONE")
 call s:Color("DiffDelete", s:red, s:none, "NONE")
 call s:Color("DiffChange", s:white, s:grey2, "NONE")
-call s:Color("DiffText", s:grey0, s:light_blue, "NONE")
+call s:Color("DiffText", s:grey0, s:teal, "NONE")
 
 " Command line
 call s:Color("ErrorMsg", s:white, s:hot_pink, "NONE")
@@ -87,23 +87,23 @@ call s:Color("WarningMsg", s:white, s:hot_pink, "NONE")
 call s:Color("Boolean", s:lavender, s:none, "NONE")
 call s:Color("Character", s:lavender, s:none, "NONE")
 call s:Color("Comment", s:gray_purple, s:none, "NONE")
-call s:Color("Conditional", s:light_pink, s:none, "NONE")
+call s:Color("Conditional", s:hot_pink, s:none, "NONE")
 call s:Color("Constant", s:mint, s:none, "NONE")
 call s:Color("Float", s:lavender, s:none, "NONE")
-call s:Color("Function", s:pink, s:none, "NONE")
-call s:Color("Identifier", s:pink, s:none, "NONE")
-call s:Color("Keyword", s:pink, s:none, "NONE")
+call s:Color("Function", s:hot_pink, s:none, "NONE")
+call s:Color("Identifier", s:hot_pink, s:none, "NONE")
+call s:Color("Keyword", s:hot_pink, s:none, "NONE")
 call s:Color("Label", s:teal, s:none, "NONE")
 call s:Color("NonText", s:white, s:grey2, "NONE")
 call s:Color("Number", s:mint, s:none, "NONE")
-call s:Color("Operator", s:light_pink, s:none, "NONE")
+call s:Color("Operator", s:hot_pink, s:none, "NONE")
 call s:Color("PreProc", s:teal, s:none, "NONE")
-call s:Color("Special", s:pink, s:none, "NONE")
+call s:Color("Special", s:hot_pink, s:none, "NONE")
 call s:Color("SpecialKey", s:white, s:grey2, "NONE")
 call s:Color("Statement", s:teal, s:none, "NONE")
 call s:Color("StorageClass", s:mint, s:none, "NONE")
 call s:Color("String", s:mint, s:none, "NONE")
-call s:Color("Tag", s:light_pink, s:none, "NONE")
+call s:Color("Tag", s:hot_pink, s:none, "NONE")
 call s:Color("Title", s:white, s:none, "NONE")
 call s:Color("Todo", s:hot_pink, s:white, "inverse,NONE")
 call s:Color("Type", s:mint, s:none, "NONE")
@@ -129,36 +129,36 @@ call s:Color("javaScriptFunction", s:mint, s:none, "NONE")
 call s:Color("javaScriptRailsFunction", s:mint, s:none, "NONE")
 call s:Color("javaScriptBraces", s:none, s:none, "NONE")
 
-call s:Color("yamlKey", s:light_pink, s:none, "NONE")
+call s:Color("yamlKey", s:hot_pink, s:none, "NONE")
 call s:Color("yamlAnchor", s:none, s:none, "NONE")
 call s:Color("yamlAlias", s:none, s:none, "NONE")
 call s:Color("yamlDocumentHeader", s:light_yellow, s:none, "NONE")
-call s:Color("yamlPlainScalar", s:light_blue, s:none, "NONE")
-call s:Color("yamlBlockCollectionItemStart", s:light_pink, s:none, "NONE")
+call s:Color("yamlPlainScalar", s:teal, s:none, "NONE")
+call s:Color("yamlBlockCollectionItemStart", s:hot_pink, s:none, "NONE")
 
 call s:Color("cssURL", s:hot_pink, s:none, "NONE")
 call s:Color("cssFunctionName", s:mint, s:none, "NONE")
 call s:Color("cssColor", s:lavender, s:none, "NONE")
-call s:Color("cssPseudoClassId", s:light_pink, s:none, "NONE")
-call s:Color("cssClassName", s:light_pink, s:none, "NONE")
+call s:Color("cssPseudoClassId", s:hot_pink, s:none, "NONE")
+call s:Color("cssClassName", s:hot_pink, s:none, "NONE")
 call s:Color("cssValueLength", s:lavender, s:none, "NONE")
 call s:Color("cssCommonAttr", s:mint, s:none, "NONE")
 call s:Color("cssBraces", s:none, s:none, "NONE")
 
-call s:Color("jsThis", s:light_pink, s:none, "NONE")
-call s:Color("jsBraces", s:pink, s:none, "NONE")
+call s:Color("jsThis", s:hot_pink, s:none, "NONE")
+call s:Color("jsBraces", s:hot_pink, s:none, "NONE")
 call s:Color("jsGlobalObjects", s:mint, s:none, "NONE")
 
 call s:Color("coffeeCurly", s:lavender, s:none, "NONE")
-call s:Color("coffeeObjAssign", s:pink, s:none, "NONE")
+call s:Color("coffeeObjAssign", s:hot_pink, s:none, "NONE")
 
 call s:Color("cjsxAttribProperty", s:lavender, s:none, "NONE")
 
-call s:Color("markdownH1", s:light_blue, s:none, "NONE")
-call s:Color("markdownH2", s:light_blue, s:none, "NONE")
-call s:Color("markdownH3", s:light_blue, s:none, "NONE")
-call s:Color("markdownH4", s:light_blue, s:none, "NONE")
-call s:Color("markdownH5", s:light_blue, s:none, "NONE")
-call s:Color("markdownH6", s:light_blue, s:none, "NONE")
-call s:Color("markdownHeadingDelimiter", s:light_blue, s:none, "NONE")
-call s:Color("markdownRule", s:light_blue, s:none, "NONE")
+call s:Color("markdownH1", s:teal, s:none, "NONE")
+call s:Color("markdownH2", s:teal, s:none, "NONE")
+call s:Color("markdownH3", s:teal, s:none, "NONE")
+call s:Color("markdownH4", s:teal, s:none, "NONE")
+call s:Color("markdownH5", s:teal, s:none, "NONE")
+call s:Color("markdownH6", s:teal, s:none, "NONE")
+call s:Color("markdownHeadingDelimiter", s:teal, s:none, "NONE")
+call s:Color("markdownRule", s:teal, s:none, "NONE")
